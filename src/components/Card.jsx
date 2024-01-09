@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5"
 import { motion } from "framer-motion"
 function Card({ data,reference }) {
     return (
+        // this will animate the carrd
 
         <motion.div drag dragConstraints={reference} whileDrag={{scale:1.1}}  dragElastic={0.1} dragTransition={{bounceStiffness:100,bounceDamping:100}}className='relative flex-shrink-0 w-60 h-72 rounded-[45px] bg-zinc-900/90 text-white px-8 py-10 overflow-hidden'>
             <FaRegFileAlt />
